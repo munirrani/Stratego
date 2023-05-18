@@ -1,0 +1,30 @@
+Root -
+
+username :
+stratego2023
+
+password :
+stratego2023
+
+
+
+
+Entities -
+
+Stratego :
+Lobby - userID
+
+Player - playerID , playerName , playerColor
+
+StrategoGame - gameID , playerID , boardID , pieceID , state , chatID
+
+Chat - chatID , playerID , text
+
+Piece - pieceID , pieceName , pieceRank
+
+Board - boardID , pieceID 
+
+
+
+
+

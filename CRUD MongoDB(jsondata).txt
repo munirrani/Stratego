@@ -1,0 +1,58 @@
+// input data to DB
+
+//lobby
+db.Lobby.insertOne({
+    userID: "1"
+})
+
+//player
+
+db.Player.insertOne({
+	playerID: "1",
+	playerName: "Syah",
+	playerColor: "Red"
+})
+
+//StrategoGame
+
+db.StrategoGame.insertOne({
+	playerID: "1",
+	gameID: "1",
+	boardID: "1",
+	pieceID: "1",
+	state: "Playing",
+	chatId: "1"
+})
+
+//Chat
+
+db.Chat.insertOne({
+	playerID: "1",
+	chatId: "1",
+	text: "You're Awesome !"
+})
+
+//Piece
+
+db.Piece.insertOne({
+	pieceID: "1",
+	pieceName: "Spy",
+	pieceRank: "1"
+})
+
+//Board
+
+db.Board.insertOne({
+	boardID: "1",
+	pieceID: "1"
+})
+
+
+// Read
+db.Player.find({"userID":"1"})
+
+// Update
+db.Player.updateOne({playerName: "Syah"}, {$set:{playerName: "Munir"}})
+
+// Delete
+db.Player.deleteOne({playerName:"Munir"})
